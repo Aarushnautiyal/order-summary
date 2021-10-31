@@ -1,0 +1,153 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  overflow: hidden;
+  background: hsl(225, 100%, 94%);
+}
+
+.background {
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+}
+.back1 {
+  width: 100vw;
+}
+.back2 {
+  width: 100%;
+  background-size: cover;
+  z-index: -2;
+  display: none;
+}
+.box {
+  margin: 30px auto auto auto;
+  height: 570px;
+  width: 400px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 2px 6px rgb(124, 124, 124);
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.main > img {
+  width: 400px;
+}
+
+.heading {
+  width: 80%;
+  margin: auto;
+}
+h3 {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(34, 33, 33);
+}
+
+p {
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(107, 103, 103);
+  font-size: 15px;
+}
+
+.block {
+  display: grid;
+  grid-template-columns: 20% 55% 25%;
+  background: rgb(207, 202, 202);
+  height: 70px;
+  margin: 40px auto auto 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.block > img {
+  margin: 10px;
+}
+
+.mid {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+span {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(34, 33, 33);
+  margin: 20px 30px 0 0;
+}
+.margin {
+  margin: 2px 30px 0 0;
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(107, 103, 103);
+  font-size: 15px;
+}
+
+a {
+  font-size: 14px;
+  margin: 25px 0 0 0;
+}
+
+.center > a {
+  text-decoration: none;
+}
+.just {
+  display: flex;
+  flex-direction: column;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+button {
+  margin-top: 20px;
+  background: slateblue;
+  box-shadow: 1px 2px 10px rgb(66, 71, 117);
+  border: none;
+  color: snow;
+  border-radius: 10px;
+  height: 40px;
+  width: 250px;
+  align-self: center;
+}
+button:hover {
+  background: rgb(57, 38, 177);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+  .box {
+    width: 300px;
+    height: 98vh;
+    margin-top: 5px;
+  }
+  .attribution {
+    display: none;
+  }
+  .back1 {
+    background-image: url(/images/pattern-background-mobile.svg);
+  }
+  span {
+    font-size: 13px;
+  }
+  .block > img {
+    width: 45px;
+  }
+  .mid {
+    margin-left: 20px;
+  }
+  .mid > p {
+    font-size: 18px;
+  }
+}
+
+/* for attribution */
+.attribution {
+  position: absolute;
+  bottom: 0%;
+  right: 35%;
+}
