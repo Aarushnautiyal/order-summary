@@ -94,6 +94,14 @@ a {
 .center > a {
   text-decoration: none;
 }
+.center > a:hover{
+    font-weight: 500;
+    color: black;
+}
+.block > a:hover{
+    text-decoration: none;
+    font-weight: 500;
+}
 .just {
   display: flex;
   flex-direction: column;
